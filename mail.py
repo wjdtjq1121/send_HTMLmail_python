@@ -6,7 +6,7 @@ from email.mime.text import MIMEText
 def sender(recipients):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('brian.jeongseop.han@bringko.com', 'qjkmetjrvtenpjly')
+    server.login('email', 'passwd')
 
     body = """
 
@@ -22,7 +22,7 @@ def sender(recipients):
         msg = MIMEMultipart('alternative')
 
         msg['Subject'] = '메일 제목'
-        msg['From'] = 'brian.jeongseop.han@bringko.com'
+        msg['From'] = 'email'
         msg['To'] = item['email']
 
         msg.attach(MIMEText(body,'html'))
