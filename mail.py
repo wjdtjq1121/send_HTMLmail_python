@@ -35,7 +35,7 @@ def sender(recipients):
 
 if __name__ == '__main__':
     list_json = [
-    {'email': 'brian.jeongseop.han@bringko.com'},
+    {'email': 'email'},
      ]
     sender(list_json)
 
